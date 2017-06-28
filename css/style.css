@@ -178,13 +178,50 @@ a {
     /*background-color: #000;*/
     display: block;
     line-height: 45px;
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.95);
+    /*text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000;*/
+    text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
+}
+
+.main-menu>li>a:hover {
+    /*color: hsla(45, 80%, 80%, 1);*/
+    color: yellow;
+}
+
+.main-menu>li>a::after {
+    content: "";
+    display: block;
+    /*background: skyblue;*/
+    border-top: 2px solid #181818;
 }
 
 .main-menu ul {
     list-style-type: none;
     background: lime;
     position: absolute;
+}
+
+.about-html {
+    display: block;
+}
+
+.about-css {
+    display: none;
+}
+
+.web-standards {
+    display: none;
+}
+
+.web-accessibility {
+    display: none;
+}
+
+.qna {
+    display: none;
+}
+
+.archieve {
     display: none;
 }
 
