@@ -69,7 +69,7 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans Regular', sans-serif;
+    font-family: "Noto Sans Regular", sans-serif;
     font-size: 1.4rem;
 }
 
@@ -168,6 +168,7 @@ a {
 
 .main-menu>li {
     float: left;
+    position: relative;
 }
 
 .main-menu>li>a {
@@ -176,7 +177,7 @@ a {
     color: rgba(255, 255, 255, 0.95);
     padding: 0px 20px;
     /*background-color: #000;*/
-    display: block;
+    /*display: block;*/
     line-height: 45px;
     border-left: 2px solid rgba(255, 255, 255, 0.95);
     /*text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000;*/
@@ -199,10 +200,27 @@ a {
     list-style-type: none;
     background: lime;
     position: absolute;
+    top: 47px;
+    position: absolute;
+    white-space: nowrap;
+    /*list-style-type: square;*/
+}
+
+
+/*.main-menu ul li 와 .main-menu>li>a 의 차이가 뭔지 모르겠다
+  -> 선택할 때 범위를 정확히 주기위해서, 지금 하위메뉴에서는 >를넣든 않넣든 차이가 없다. 
+  근데 왜 .main-menu>li>a 에 display:block 되어있는데 .main-menu ul li 여기에 또 display: inline-block;값을 입력하는지.. */
+
+.main-menu ul li {
+    /*list-style-type: square;*/
+    display: inline-block;
 }
 
 .about-html {
     display: block;
+    top: 0;
+    left: 0;
+    /*display: inline-flex;*/
 }
 
 .about-css {
