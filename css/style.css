@@ -188,7 +188,7 @@ a {
     color: yellow;
 }
 
-.main-menu>li>a::after {
+.main-menu>li>a:hover::after {
     content: "";
     display: block;
     /*background: skyblue;*/
